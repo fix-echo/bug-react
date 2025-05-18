@@ -21,3 +21,19 @@
 - 编译时：babel编译实现
 - 运行时：jsx方法或React.createElement方法的实现（包含dev、prod两个环境）
 
+
+## 为什么我们直接导出函数就行
+
+```
+JSX 源码
+   ↓
+Babel 解析为 AST
+   ↓
+JSX 转换插件处理
+   ↓
+生成 React.createElement 调用
+   ↓
+最终 JavaScript 代码
+```
+这是整个流程，JSX源码，然后Babel解析为AST抽象语法树，JSX转换插件做处理(也就是编译时的babel/react-plugin) -> 然后调用我们的React.createElement -> 最后生成JS代码
+
