@@ -1,8 +1,8 @@
-import path from "node:path";
 import fs from "node:fs";
+import path from "node:path";
 
-import ts from "rollup-plugin-typescript2";
 import cjs from "@rollup/plugin-commonjs";
+import ts from "rollup-plugin-typescript2";
 
 const pkgPath = path.resolve(__dirname, "../../packages");
 const distPath = path.resolve(__dirname, "../../dist/node_modules");

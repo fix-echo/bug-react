@@ -1,6 +1,6 @@
+import generatePackageJson from "rollup-plugin-generate-package-json";
 // react包的打包配置
 import { getBaseRollupPlugins, getPackageJson, resolvePkgPath } from "./utils";
-import generatePackageJson from "rollup-plugin-generate-package-json";
 
 const { name, module } = getPackageJson("react");
 // react包的路径
